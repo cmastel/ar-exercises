@@ -1,0 +1,19 @@
+current directory: /vagrant/w9/d1/ar-exercises/vendor/bundle/ruby/2.3.0/gems/json-1.8.6/ext/json
+/home/vagrant/.rvm/rubies/ruby-2.3.5/bin/ruby -r ./siteconf20191209-20877-3ulk37.rb extconf.rb
+creating Makefile
+
+current directory: /vagrant/w9/d1/ar-exercises/vendor/bundle/ruby/2.3.0/gems/json-1.8.6/ext/json
+make "DESTDIR=" clean
+make: Warning: File 'Makefile' has modification time 867 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+
+current directory: /vagrant/w9/d1/ar-exercises/vendor/bundle/ruby/2.3.0/gems/json-1.8.6/ext/json
+make "DESTDIR="
+make: Warning: File 'Makefile' has modification time 867 s in the future
+make: Nothing to be done for 'all'.
+make: warning:  Clock skew detected.  Your build may be incomplete.
+
+current directory: /vagrant/w9/d1/ar-exercises/vendor/bundle/ruby/2.3.0/gems/json-1.8.6/ext/json
+make "DESTDIR=" install
+make: Warning: File 'Makefile' has modification time 867 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
