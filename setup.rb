@@ -31,15 +31,14 @@ ActiveRecord::Schema.define do
     t.column :mens_apparel, :boolean
     t.column :womens_apparel, :boolean
     t.timestamps null: false
-    # t.has_many :employees
   end
   create_table :employees do |table|
     table.references :store
     table.column :first_name, :string
     table.column :last_name, :string
     table.column :hourly_rate, :integer
+    table.column :password, :string
     table.timestamps null: false
-    # table.belongs_to :store
   end
 end
 

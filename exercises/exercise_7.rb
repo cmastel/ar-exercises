@@ -52,13 +52,13 @@ class Store < ActiveRecord::Base
   end
 end
 
-puts "What is the name of a new Store?"
-new_store = gets.chomp
-puts "What is the annual revenue?"
-new_revenue = gets.chomp.to_i
+# puts "What is the name of a new Store?"
+# new_store = gets.chomp
+# puts "What is the annual revenue?"
+# new_revenue = gets.chomp.to_i
 
-@new_store = Store.create(name: new_store, annual_revenue: new_revenue)
-@new_store.valid? ? (puts "Saving") : (puts @new_store.errors.messages)
-@new_store.save
+# @new_store = Store.create(name: new_store, annual_revenue: new_revenue)
+# @new_store.valid? ? (puts "Saving") : (puts @new_store.errors.messages)
+# @new_store.save
 
 puts @store1.employees.create(first_name: "Thor", last_name: "Beast", hourly_rate: 60).errors.messages
