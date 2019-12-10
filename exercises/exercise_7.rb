@@ -40,16 +40,16 @@ end
 
 class Store < ActiveRecord::Base
   belongs_to :store
-  validates :name, length: { minimum: 3, message: "%{name} is not a valid size" }
-  validates :annual_revenue, presence: true
-  validates :annual_revenue, numericality: { only_integer: true, greater_than: 0 }
-  validate :must_have_mens_or_womens
+  # validates :name, length: { minimum: 3, message: "%{name} is not a valid size" }
+  # validates :annual_revenue, presence: true
+  # validates :annual_revenue, numericality: { only_integer: true, greater_than: 0 }
+  # validate :must_have_mens_or_womens
 
-  def must_have_mens_or_womens
-    if :mens_apparel.present? || :womens_apparel.present?
-      errors.add(:apparel, "must carry at least one of the men's or women's apparel")
-    end
-  end
+  # def must_have_mens_or_womens
+  #   if :mens_apparel.present? || :womens_apparel.present?
+  #     errors.add(:apparel, "must carry at least one of the men's or women's apparel")
+  #   end
+  # end
 end
 
 # puts "What is the name of a new Store?"
