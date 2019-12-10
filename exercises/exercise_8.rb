@@ -22,7 +22,6 @@ class Employee
       end
     end
 
-
 end
 
 @store2.employees.create(first_name: "The", last_name: "Hulk", hourly_rate: 60).errors.messages
